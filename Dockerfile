@@ -78,4 +78,4 @@ ENV IPFS_LOGGING ""
 ENTRYPOINT ["/sbin/tini", "--", "/usr/local/bin/start_ipfs"]
 
 # Execute the daemon subcommand by default
-CMD ["daemon", "--migrate=true"]
+CMD ["daemon", "--migrate=true", "--enable-pubsub-experiment"]
